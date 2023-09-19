@@ -1,0 +1,28 @@
+p::first-letter{
+    color: blue;
+    font-size: 5em;
+}
+p::first-line{
+    color: red;
+}
+
+ul{
+    list-style: none;
+    /* list-style-image: url(download.jfif);
+    margin-left: 200px; */
+}
+
+li::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(download.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p::selection{
+    background-color: red;
+}
